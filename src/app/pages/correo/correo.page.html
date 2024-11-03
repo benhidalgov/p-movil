@@ -1,0 +1,43 @@
+<ion-content [fullscreen]="true" class="color-fondo">
+  <div class="logo-login-duoc">
+    <img src="../../../assets/icon/Logo_DuocUC.svg.png">
+  </div>
+  <br>
+
+  <div class="container-box">
+    <div style="text-align: center; margin-top: 40px">
+      <h2>Sistema de Asistencia DUOC</h2>
+    </div>
+
+    <h2 style="text-align: center">Recuperar contraseña</h2>
+    <p style="text-align: center">Paso 1: Ingresa tu correo</p>
+
+    <form [formGroup]="correoForm" (ngSubmit)="onSubmit()">
+      <ion-item class="custom-item">
+        <ion-label position="floating">Ingresa tu correo</ion-label>
+        <ion-input type="email" formControlName="correo" required></ion-input>
+      </ion-item>
+
+      <div
+        *ngIf="correoForm.get('correo')?.invalid && correoForm.get('correo')?.touched"
+        style="color: red; text-align: center; margin-top: 10px"
+      >
+        {{ getCorreoErrorMessage() }}
+      </div>
+
+      <ion-button
+        expand="block"
+        style="margin-top: 20px"
+        color="primary"
+        [disabled]="correoForm.invalid"
+        class="recuperar"
+      >
+        Recuperar contraseña
+      </ion-button>
+    </form>
+
+    <div style="text-align: center; margin-top: 20px">
+      <a href="/ingreso">Iniciar sesión</a>
+    </div>
+  </div>
+</ion-content>
