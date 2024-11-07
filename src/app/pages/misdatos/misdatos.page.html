@@ -1,15 +1,21 @@
 <ion-content [fullscreen]="true" class="color-fondo">
   <!-- Logo DUOC UC similar a la primera página -->
-  <div class="logo-login-duoc" style="text-align: center; margin-top: 20px;">
-    <img src="../../../assets/icon/Logo_DuocUC.svg.png" alt="Duoc UC" style="width: 150px;">
+  <div class="logo-login-duoc" style="text-align: center; margin-top: 20px">
+    <img
+      src="../../../assets/icon/Logo_DuocUC.svg.png"
+      alt="Duoc UC"
+      style="width: 150px"
+    />
   </div>
 
   <!-- Título similar a la primera página -->
-  <div style="text-align: center; margin-top: 20px;">
-    <h2>Sistema de Asistencia DUOC</h2>
+  <div class="header-container">
+    <div class="header-box">
+      <h2>Sistema de Asistencia DUOC</h2>
+    </div>
   </div>
 
-  <h3 style="text-align: center; margin-top: 20px;">Mis Datos</h3>
+  <h3 style="text-align: center; margin-top: 20px">Mis Datos</h3>
 
   <!-- Campos de información del usuario -->
   <div class="container-box">
@@ -55,8 +61,14 @@
 
     <ion-item class="custom-item">
       <ion-label position="floating">Educación</ion-label>
-      <ion-select placeholder="Seleccione Nivel" [(ngModel)]="usuario.nivelEducacional.id">
-        <ion-select-option *ngFor="let nivel of listaNivelesEducacionales" [value]="nivel.id">
+      <ion-select
+        placeholder="Seleccione Nivel"
+        [(ngModel)]="usuario.nivelEducacional.id"
+      >
+        <ion-select-option
+          *ngFor="let nivel of listaNivelesEducacionales"
+          [value]="nivel.id"
+        >
           {{ nivel.nombre }}
         </ion-select-option>
       </ion-select>
@@ -64,11 +76,19 @@
 
     <ion-item class="custom-item">
       <ion-label>Fecha de nacimiento</ion-label>
-      <ion-datetime [(ngModel)]="usuario.fechaNacimiento" displayFormat="DD/MM/YYYY"></ion-datetime>
+      <ion-datetime
+        [(ngModel)]="usuario.fechaNacimiento"
+        displayFormat="DD/MM/YYYY"
+      ></ion-datetime>
     </ion-item>
 
     <!-- Botones para las acciones -->
-    <ion-button expand="block" style="margin-top: 20px;" color="primary" (click)="guardarDatos()">
+    <ion-button
+      expand="block"
+      style="margin-top: 20px"
+      color="primary"
+      (click)="guardarDatos()"
+    >
       Guardar
     </ion-button>
 
@@ -85,12 +105,20 @@
           </ion-button>
         </ion-col>
         <ion-col size="3">
-          <ion-button (click)="createPageTurnAnimation()" shape="block" size="small">
+          <ion-button
+            (click)="createPageTurnAnimation()"
+            shape="block"
+            size="small"
+          >
             Limpiar 3
           </ion-button>
         </ion-col>
         <ion-col size="3">
-          <ion-button (click)="mostrarDatosPersonales()" shape="block" size="small">
+          <ion-button
+            (click)="mostrarDatosPersonales()"
+            shape="block"
+            size="small"
+          >
             Mostrar Datos
           </ion-button>
         </ion-col>

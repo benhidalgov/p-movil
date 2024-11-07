@@ -5,7 +5,9 @@ ion-content {
   --ion-background-color: transparent;
 }
 
-h1, h4, b {
+h1,
+h4,
+b {
   color: black;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
 }
@@ -50,4 +52,25 @@ ion-button {
 
 ion-input::placeholder {
   color: rgba(0, 0, 0, 0.5);
+}
+/* Flex container to center the header content */
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Adjust height as needed */
+}
+
+.header-box {
+  background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+
+h2 {
+  color: white;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Optional text shadow for readability */
 }
