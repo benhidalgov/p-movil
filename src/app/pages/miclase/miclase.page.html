@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title #titulo class="ion-text-left ion-text font-size-18">Sistema Asistencia Duoc</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding-horizontal page" #page>
+
+  <div class="logo-login-duoc">
+    <img src="../../../assets/icon/Logo_DuocUC.svg.png" alt="Logo Duoc">
+  </div>
+
+  <ion-item>
+    <ion-label>
+      <h1 class="ion-text-center">¡Bienvenido(a) Estudiante! Juan Valenzuela</h1>
+    </ion-label>
+  </ion-item>
+
+  <ion-card *ngIf="datosQR">
+    <ion-card-header>
+      <ion-card-title>Detalles de la Clase:</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h3>Sede: {{ datosQR.sede }}</h3>
+      <h3>ID Asignatura: {{ datosQR.idAsignatura }}</h3>
+      <h3>Sección: {{ datosQR.seccion }}</h3>
+      <h3>Nombre de la Asignatura: {{ datosQR.nombreAsignatura }}</h3>
+      <h3>Nombre del Profesor: {{ datosQR.nombreProfesor }}</h3>
+      <h3>Fecha: {{ datosQR.fecha }}</h3>
+      <h3>Bloque de Inicio: {{ datosQR.bloqueInicio }}</h3>
+      <h3>Bloque de Término: {{ datosQR.bloqueTermino }}</h3>
+      <h3>Hora: {{ datosQR.hora }}</h3>
+      <h3>Hora de Fin de la Clase: {{ datosQR.horaFin }}</h3>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="block" [routerLink]="['/inicio']">Inicio</ion-button>
+  <ion-button expand="full" [routerLink]="['/misdatos']">Mis datos</ion-button>
+</ion-content>

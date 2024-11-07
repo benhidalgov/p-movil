@@ -1,7 +1,7 @@
 {
-  "name": "angrydinosaur",
+  "name": "Proyecto semestral",
   "integrations": {
     "capacitor": {}
   },
-  "type": "angular-standalone"
+  "type": "angular"
 }

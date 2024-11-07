@@ -1,0 +1,33 @@
+ <ion-content [fullscreen]="true" class="color-fondo">
+   <div class="logo-login-duoc">
+     <img src="../../../assets/icon/Logo_DuocUC.svg.png" >
+   </div>
+   <br>
+
+  <ion-card class="ion-padding-vertical caja-correcto">
+    <ion-card-content>
+      <h1 class="ion-text-center" style="color: rgb(0, 0, 0);">
+        Su respuesta es Correcta!!!!
+      </h1>
+      <br>
+      <div class="ion-text-center">
+        <img src="../../../assets/icon/correctoo.jpg">
+      </div>
+      <br>
+      <div>
+    <h1 class="ion-text-center" style="color: rgb(0, 0, 0);">
+      Su contraseña es: <strong style="color: #1d28f6a6;">{{ usuario?.password }}</strong>
+    </h1>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <br><br><br>
+
+  <ion-button class="boton-regresar" size="large" (click)="navegarIngreso()">
+    <ion-icon name="arrow-back"></ion-icon>
+    <span style="font-size: medium;">Regresar</span>
+
+  </ion-button>
+
+
+</ion-content>

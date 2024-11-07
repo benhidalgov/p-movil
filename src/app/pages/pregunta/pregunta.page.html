@@ -1,0 +1,34 @@
+<ion-content [fullscreen]="true" class="color-fondo">
+  <div class="logo-login-duoc">
+    <img src="../../../assets/icon/Logo_DuocUC.svg.png">
+  </div>
+  <br>
+
+  <div class="container-box">
+    <div style="text-align: center; margin-top: 40px">
+      <h2>Sistema de Asistencia DUOC</h2>
+    </div>
+
+    <h2 style="text-align: center">Recuperar contraseña</h2>
+    <p style="text-align: center">Paso 2: Responde la pregunta secreta</p>
+    <p style="text-align: center">{{ preguntaSecreta }}</p>
+
+    <ion-item class="custom-item">
+      <ion-label position="floating">Escribe tu respuesta</ion-label>
+      <ion-input [(ngModel)]="respuesta" required></ion-input>
+    </ion-item>
+
+    <ion-button
+      expand="block"
+      style="margin-top: 20px"
+      color="primary"
+      (click)="onSubmit()"
+    >
+      Recuperar contraseña
+    </ion-button>
+
+    <div style="text-align: center; margin-top: 20px">
+      <a href="/src/app/pages/ingreso/ingreso.page.html">Iniciar sesión</a>
+    </div>
+  </div>
+</ion-content>

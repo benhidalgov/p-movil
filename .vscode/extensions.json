@@ -1,7 +1,6 @@
 {
-  "recommendations": [
-    "ionic.ionic",
-    "shd101wyy.markdown-preview-enhanced",
-    "wxlim.android-webview-debug"
-  ]
+    "recommendations": [
+      "ionic.ionic",
+      "fivethree.vscode-ionic-snippets"
+    ]
 }
