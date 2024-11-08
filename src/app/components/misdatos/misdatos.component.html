@@ -1,0 +1,15 @@
+<div class=marco>
+
+  <div *ngIf="usuario">
+    <ion-input type="text" [(ngModel)]="usuario.correo" label="Correo" labelPlacement="floating"></ion-input>
+    <ion-input type="text" [(ngModel)]="usuario.nombre" label="Nombre" labelPlacement="floating"></ion-input>
+    <ion-input type="text" [(ngModel)]="usuario.apellido" label="Apellido" labelPlacement="floating"></ion-input>
+    <ion-input type="text" [(ngModel)]="usuario.preguntaSecreta" label="Pregunta secreta" labelPlacement="floating"></ion-input>
+    <ion-input type="text" [(ngModel)]="usuario.respuestaSecreta" label="Respuesta secreta" labelPlacement="floating"></ion-input>
+    <ion-input type="password" [(ngModel)]="usuario.password" label="Contraseña" labelPlacement="floating"></ion-input>
+    <ion-input type="password" [(ngModel)]="repeticionPassword" label="Repetir contraseña" labelPlacement="floating"></ion-input>
+
+    <ion-button (click)="guardarCambios()">Guardar cambios</ion-button>
+  </div>
+
+</div>

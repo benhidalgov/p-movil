@@ -1,0 +1,64 @@
+/* Fondo y contenedor centrado */
+ion-content {
+  background: url("/assets/images/fondo.jpg") no-repeat center center / cover !important;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Contenedor principal */
+.centrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Caja de contenido con bordes */
+.enmarcar {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Estilo para los títulos */
+.enmarcar h1 {
+  color: #333;
+  font-size: 1.6em;
+  margin: 15px 0;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+}
+
+/* Tabla de información */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+  color: #333;
+}
+
+/* Estilo de celdas */
+table tbody tr:nth-child(even) {
+  background-color: rgba(240, 240, 240, 0.8);
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+td:first-child {
+  font-weight: bold;
+  color: #555;
+}

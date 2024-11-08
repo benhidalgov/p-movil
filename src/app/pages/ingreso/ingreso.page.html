@@ -1,0 +1,36 @@
+<ion-content [fullscreen]="true" class="color-fondo">
+  <div class="logo-login-duoc">
+    <img src="../../../assets/icon/Logo_DuocUC.svg.png">
+  </div>
+  <br>
+
+  <div class="container-box">
+    <div style="text-align: center; margin-top: 40px">
+      <h2>Sistema de Asistencia DUOC</h2>
+    </div>
+
+    <h2 style="text-align: center">Inicio de sesión</h2>
+
+    <ion-item class="custom-item">
+      <ion-label position="floating">Cuenta</ion-label>
+      <ion-input [(ngModel)]="usuario.cuenta" placeholder="EJ: pcabrera"></ion-input>
+    </ion-item>
+
+    <ion-item class="custom-item">
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input [(ngModel)]="usuario.password" type="password" placeholder="EJ: 12345"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" style="margin-top: 20px" (click)="ingresar()" color="primary">
+      <ion-icon name="person" slot="start" ios="logo-apple"></ion-icon>
+      Ingresar
+    </ion-button>
+
+    <div style="text-align: center; margin-top: 20px">
+      <a [routerLink]="['/correo']">Recuperar Contraseña</a>
+    </div>
+    <div style="text-align: center; margin-top: 20px">
+      <a [routerLink]="['/mapa']">Como llegar a Duoc UC </a>
+    </div>
+  </div>
+</ion-content>

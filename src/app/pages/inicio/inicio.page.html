@@ -1,0 +1,16 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <app-codigoqr *ngIf="componenteSeleccionada === 'codigoqr'"></app-codigoqr>
+  <app-miclase *ngIf="componenteSeleccionada === 'miclase'"></app-miclase>
+  <app-foro *ngIf="componenteSeleccionada === 'foro'"></app-foro>
+  <app-misdatos *ngIf="componenteSeleccionada === 'misdatos'"></app-misdatos>
+</ion-content>
+
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-title size="large">Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<app-footer> </app-footer>

@@ -1,0 +1,76 @@
+ion-content {
+  background-image: url("/assets/icon/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  --ion-background-color: transparent;
+}
+
+h1,
+h4,
+b {
+  color: black;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+}
+
+ion-item,
+ion-input,
+ion-label,
+.custom-toolbar {
+  --ion-background-color: rgba(255, 255, 255, 0.8);
+  --ion-box-shadow-color: #ffffff;
+}
+
+.container-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  margin: 40px auto;
+  max-width: 400px;
+}
+
+.custom-item {
+  --background: rgba(255, 255, 255, 0.8);
+  --color: #000000;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ion-header {
+  --ion-background-color: rgba(255, 255, 255, 0.8);
+}
+
+ion-grid ion-button {
+  --background: #007bff;
+  --color: white;
+}
+
+ion-button {
+  margin-top: 20px;
+}
+
+ion-input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+/* Flex container to center the header content */
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Adjust height as needed */
+}
+
+.header-box {
+  background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+
+h2 {
+  color: white;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Optional text shadow for readability */
+}
